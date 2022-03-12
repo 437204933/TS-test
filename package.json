@@ -1,0 +1,19 @@
+{
+  "name": "ts-test",
+  "version": "1.0.0",
+  "description": "make some ts - test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/437204933/TS-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/437204933/TS-test/issues"
+  },
+  "homepage": "https://github.com/437204933/TS-test#readme"
+}
