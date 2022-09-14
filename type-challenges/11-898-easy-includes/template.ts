@@ -8,6 +8,11 @@ export type Includes<T extends readonly any[], U> = T extends [infer First, ...i
     : Includes<Rest, U>
   : false
 
-type Includes2<T extends readonly any[], U> = {} extends {
+type Includes2<T extends readonly any[], U> = {} extends
+{
   [K in keyof T as Equal<T[K], U> extends true ? K : never]: T[K]
-} ? false : true
+}
+  ? false
+  : true
+
+type Trans<T extends any[]> = T[number]

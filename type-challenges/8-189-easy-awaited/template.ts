@@ -1,4 +1,8 @@
-type MyAwaited<T extends Promise<any>> = T extends Promise<infer Res> ? Res extends Promise<any> ? MyAwaited<Res> : Res : never
+type MyAwaited<T extends Promise<any>> = T extends Promise<infer Res>
+  ? Res extends Promise<any>
+    ? MyAwaited<Res>
+    : Res
+  : never
 
 type X = Promise<string>
 type Y = Promise<{ field: number }>
